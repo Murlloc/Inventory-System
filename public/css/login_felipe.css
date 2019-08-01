@@ -1,5 +1,6 @@
 html,body{
     background-image: url("../uploads/Background-1.jpg");
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -15,7 +16,7 @@ html,body{
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
-    background-color: rgba(0,0,0,0.5) !important;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .card-header h3{
@@ -26,12 +27,12 @@ html,body{
     width: 50px;
     background-color: #FFC312;
     color: black;
-    border:0 !important;
+    border:0 ;
 }
 
 input:focus{
-    outline: 0 0 0 0  !important;
-    box-shadow: 0 0 0 0 !important;
+    outline: 0 0 0 0  ;
+    box-shadow: 0 0 0 0 ;
 }
 
 .remember{
@@ -49,7 +50,7 @@ input:focus{
     width: 20px;
     height: 20px;
     margin-left: 15px;
-    margin-right: 5px;
+    margin-right: 5px
 }
 
 .login_cadastro_btn{
@@ -70,3 +71,50 @@ input:focus{
 .links a{
     margin-left: 4px;
 }
+
+@media (max-height: 500px) {
+    .card{
+        margin-top: 50px;
+        margin-bottom: auto;
+
+    }
+}
+@media (max-height: 350px) {
+   .card-body{
+        transform: scale(0.5);
+    }
+    .card-header h3{
+        transform: scale(0.5);
+        
+    }
+    .card{
+        margin-top:0;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 980px) and (min-height: 800px){
+   .card-body{
+        transform: scale(2);
+    }
+    .card-header h3{
+        transform: scale(2);
+        margin-bottom: 150px;
+    }
+    
+    .card{
+        margin-top: 350px;
+        background-color: rgba(0,0,0,0);
+    }
+    .fundo{
+        position: absolute;
+        margin-top: -50px;
+        margin-bottom: auto;
+        margin-left: -200px;
+        margin-right: auto;
+        height: 600px;
+        width: 800px;
+        background-color: rgba(0,0,0,0.5) !important;
+    }
+
+}
+
