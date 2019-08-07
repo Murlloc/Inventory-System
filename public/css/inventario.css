@@ -2,7 +2,12 @@
     margin-left: 40%;
     width: 150px;
 }
-
+h1{
+    text-align: center;
+    size: 20px;
+    font-weight: bold;
+    color: black;
+}
 html,body{
     background-image: url("../uploads/Background-1.jpg");
     color: white;
@@ -11,34 +16,38 @@ html,body{
     height: 100%;
 }
 
-a{
-    text-decoration: none;
-}
-
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #8e0606;
+    background-color: transparent;
 }
 
 li{
     float: left;
+    padding: 20px;
+}
+a:-webkit-any-link { color: black; }
+
+a:hover{
+    text-decoration: none!important;
+    cursor: pointer;
+    box-shadow: none;
 }
 
 li a {
-    text-decoration: none;
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
+    background-color: #d4af37;
 }
 
 li a:hover:not(.active) {
-    background-color: #d4af37;
+    background-color: gold;
 }
 
 .active {
-    background-color: #d4af37;
+    background-color: gold;
 }
